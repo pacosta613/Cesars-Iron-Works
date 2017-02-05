@@ -1,0 +1,29 @@
+{
+  "name": "cesars-iron-works",
+  "version": "1.0.0",
+  "description": "Cesars Iron Work business Website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacosta613/Cesars-Iron-Works.git"
+  },
+  "author": {
+    "name": "Pedro Acosta",
+    "email": "pedro.acosta613@gmail.com",
+    "url": "http://cesars-iron-works.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacosta613/Cesars-Iron-Works/issues"
+  },
+  "homepage": "https://github.com/pacosta613/Cesars-Iron-Works#readme",
+  "dependencies": {
+    "angular": "^1.6.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
