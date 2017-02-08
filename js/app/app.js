@@ -3,7 +3,7 @@ angular
   .config(function($routeProvider) {
     
     $routeProvider
-      .when("/", {
+      .when("/home", {
         templateUrl: "template/home.html",
         controller: "HomeController as vm"
       })
@@ -21,6 +21,6 @@ angular
       .when("/contact", {
         templateUrl: "contact.html",
         controller: "ContactController as vm"
-      })
+      });
     //$urlRouterProvider.otherwise("/home");
   });
