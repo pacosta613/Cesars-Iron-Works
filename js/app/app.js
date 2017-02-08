@@ -1,26 +1,37 @@
-angular
-  .module('ironWorksApp', ['ngRoute'])
-  .config(function($routeProvider) {
+(function() {
+
+  'use strict';
+
+  angular
+  .module('ironWorksApp', ['ui.router', 'templates'])
+  .config(function($stateProvider, $urlRouterProvider) {
     
-    $routeProvider
-      .when("/home", {
+    $stateProvider
+      .state("home", {
+        url: "/",
         templateUrl: "template/home.html",
         controller: "HomeController as vm"
       })
   
-      .when("/about", {
+      .state("about", {
+        url: "/about",
         templateUrl: "template/about.html",
         controller: "AboutController as vm"
       })
   
-      .when("/product", {
+      .state("product", {
+        url: "/product",
         templateUrl: "template/product.html",
         controller: "ProductController as vm"
       })
 
-      .when("/contact", {
+      .state("contact", {
+        url: "/contact",
         templateUrl: "contact.html",
         controller: "ContactController as vm"
-      });
-    //$urlRouterProvider.otherwise("/home");
+      })
+
+    $urlRouterProvider.otherwise("/");
   });
+
+}());
