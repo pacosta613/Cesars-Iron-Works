@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/pacosta613/Cesars-Iron-Works#readme",
   "dependencies": {
-    "angular": "^1.6.1"
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.2"
   },
   "devDependencies": {
     "lite-server": "^2.2.2"

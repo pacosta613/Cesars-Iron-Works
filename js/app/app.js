@@ -1,6 +1,6 @@
 angular
-  .module('ironWorksApp', [])
-  .config(function($routeProvider, $urlRouterProvider) {
+  .module('ironWorksApp', ['ngRoute'])
+  .config(function($routeProvider) {
     
     $routeProvider
       .when("/", {
@@ -23,4 +23,4 @@ angular
         controller: "ContactController as vm"
       })
     //$urlRouterProvider.otherwise("/home");
-  })
+  });
