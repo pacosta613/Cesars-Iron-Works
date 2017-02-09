@@ -1,7 +1,16 @@
-function HomeController(){
-  
-}
+(function() {
 
-angular
-  .module("ironWorksApp")
-  .controller("HomeController", HomeController);
+  'use strict';
+
+  angular
+    .module('ironWorksApp')
+    .controller("HomeController", HomeController);
+
+    function HomeController($scope){
+
+      $scope.name = "Pedro Acosta";
+
+    }
+
+
+}());

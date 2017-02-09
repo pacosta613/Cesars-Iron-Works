@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ironWorksApp">
 <head>
   <title>Cesar's Iron Works</title>
 
@@ -8,47 +8,22 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
   <script src="angular.js"></script>
-  <script src="angular-ui-router.js"></script>
+  <script src="angular-route.js"></script>
   <script src="js/app/app.js"></script>
   <script src="js/controllers/HomeController.js"></script>
   <script src="js/controllers/AboutController.js"></script>
   <script src="js/controllers/ContactController.js"></script>
   <script src="js/controllers/ProductController.js"></script>
+
+  
 </head>
-<body ng-app="ironWorksApp">
+<body>
 
-  <header>
-    <!-- HEADER AND NAVBAR -->
-    <nav class="navbar navbar-default">
-      <div class="container">
+  <div ng-include="'js/views/navbar.html'"></div>
+  <div ng-include="'js/views/footer.html'"></div>
+  <div ng-view></div>
 
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">Cesar's Iron Work</a>
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#/home"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
-          <li><a href="#/product"><i class="fa fa-picture-o"></i> Product</a></li>
-          <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
-        </ul>
-
-      </div>
-    </nav>
-  </header>
-
-  <div id="main">
-    <div ng-view></div>
-  </div>
-
-  <footer class="text-center">
-    <h3>Cesar's Iron Works</h3>
-
-    <small>
-      © 2017 Developed by <a href="pacosta613.github.io">Pedro Acosta</a>
-    </small>
-  </footer>
+</div>
 
 </body>
 </html>
-Contact GitHub API Training Shop Blog About

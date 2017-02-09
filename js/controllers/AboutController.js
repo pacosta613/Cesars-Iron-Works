@@ -1,5 +1,5 @@
-function AboutController(){
-  
+function AboutController($scope){
+  $scope.name = "Pedro Acosta";
 }
 
 angular
