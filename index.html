@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ironWorksApp">
+<html>
 <head>
   <title>Cesar's Iron Works</title>
 
@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-  
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="js/app/app.js"></script>
   <!-- <script src="js/controllers/HomeController.js"></script>
   <script src="js/controllers/AboutController.js"></script>
   <script src="js/controllers/ContactController.js"></script>
@@ -15,14 +17,10 @@
 
   
 </head>
-<body>
+<body ng-app="app">
 
   <div ng-include="'js/views/navbar.html'"></div>
+  <div ui-view></div>
   <div ng-include="'js/views/footer.html'"></div>
-  <div ng-view></div>
-
-  <script src="node_modules/angular/angular.min.js"></script>
-  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="js/app/app.js"></script>
 </body>
 </html>

@@ -3,37 +3,35 @@
   'use strict';
 
   angular
-  .module('ironWorksApp', ['ui.router'])
-  .config(function($stateProvider) {
+  .module('app', ['ui.router'])
+  .config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
       .state("home", {
         url: "/home",
         templateUrl: "js/views/home.html",
-        // controller: "HomeController"
+        controller: "HomeController"
       })
   
       .state("about", {
         url: "/about",
         templateUrl: "js/views/about.html",
-        // controller: "AboutController"
+        controller: "AboutController"
       })
   
       .state("product", {
         url: "/product",
         templateUrl: "js/views/product.html",
-        // controller: "ProductController"
+        controller: "ProductController"
       })
 
       .state("contact", {
         url: "/contact",
         templateUrl: "js/views/contact.html",
-        // controller: "ContactController"
+        controller: "ContactController"
       });
-    // $locationProvider.html5Mode({
-    //   enabled: true,
-    //   requireBase: false
-    // });
   });
 
 }());
