@@ -3,26 +3,30 @@
   'use strict';
 
   angular
-  .module('ironWorksApp', ['ngRoute'])
-  .config(function($routeProvider) {
+  .module('ironWorksApp', ['ui.router'])
+  .config(function($stateProvider) {
     
-    $routeProvider
-      .when("/home", {
+    $stateProvider
+      .state("home", {
+        url: "/home",
         templateUrl: "js/views/home.html",
         controller: "HomeController"
       })
   
-      .when("/about", {
+      .state("about", {
+        url: "/about",
         templateUrl: "js/views/about.html",
         controller: "AboutController"
       })
   
-      .when("/product", {
+      .state("product", {
+        url: "/product",
         templateUrl: "js/views/product.html",
         controller: "ProductController"
       })
 
-      .when("/contact", {
+      .state("contact", {
+        url: "/contact",
         templateUrl: "js/views/contact.html",
         controller: "ContactController"
       });
