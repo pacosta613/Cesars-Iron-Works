@@ -17,20 +17,17 @@
   
       .state("about", {
         url: "/about",
-        templateUrl: "js/views/about.html",
-        controller: "AboutController"
+        templateUrl: "js/views/about.html"
       })
   
       .state("product", {
         url: "/product",
-        templateUrl: "js/views/product.html",
-        controller: "ProductController"
+        templateUrl: "js/views/product.html"
       })
 
       .state("contact", {
         url: "/contact",
-        templateUrl: "js/views/contact.html",
-        controller: "ContactController"
+        templateUrl: "js/views/contact.html"
       });
   });
 
