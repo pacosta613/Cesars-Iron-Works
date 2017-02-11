@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('ironWorksApp')
+    .module('app')
     .controller("HomeController", HomeController);
 
     function HomeController($scope){

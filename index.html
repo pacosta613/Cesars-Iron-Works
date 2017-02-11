@@ -10,25 +10,20 @@
   <script src="node_modules/angular/angular.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="js/app/app.js"></script>
+  <script src="js/controllers/HomeController.js"></script>
+  <script src="js/directives/sideBarDirective.js"></script>
   
 </head>
 <body ng-app="app">
 
   <div ng-include="'js/views/navbar/navbar.html'"></div>
-  
-    <div class="row">
+  <div ng-include="'js/views/sidebar/sidebar.html'"></div>
 
-      <div ng-include="'js/views/sidebar/sidebar.html'"></div>
-      <div class="jumbotron text-center" >
-        <div class="container">
+  <div class="jumbotron text-center" >
+    <div ui-view></div>
+  </div>
 
-          <div class="col-sm-10">
-            <div ui-view></div>
-          </div>
-         
-        </div>
-      </div>
-    <div ng-include="'js/views/footer.html'"></div>
+  <div ng-include="'js/views/footer.html'"></div>
   </div>
 </body>
 </html>
