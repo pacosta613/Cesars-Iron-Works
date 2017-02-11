@@ -1,18 +1,22 @@
 (function(){
-  
+
   'use strict';
 
   angular
     .module('app')
-    .controller("SideBarController", SideBarController);
+    .controller('SideBarController', SideBarController)
 
-    function SideBarController($scope){
-      $scope.state = false;
 
-      $scope.toggleState = function(){
-        $scope.state = true;
-        // $scope.state = !$scope.state;
-      } 
+  function SideBarController(){
+
+    var vm = this;
+    vm.clickFlag = false;
+    vm.toggleState = toggleState;
+
+    function toggleState(){
+      vm.clickFlag = true;
     };
+
+  };
 
 }());

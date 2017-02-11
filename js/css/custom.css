@@ -2,38 +2,62 @@ body {
     font-family : monospace;
 }
 
-.sidebar {
-    position : absolute;
-    /*top : 0;*/
-    left : -160px;;
-    transition : 100ms left;
+#sidebar {
+    background: #151718;
+    width: 200px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: -200px;
+    transition: left 0.3s linear;
 }
-#navigation-toggle {
-        position : absolute;
-        left : 160px;
-        background : rgba(3,159,244,.95);
-        color : white;
-        text-decoration : none;
-        padding : 20px;
-}
-.show {
-    left : 0;
-}
-.navigation {
-    list-style : none;
-    padding : 0;
-    margin : 0;
-}
-.navigation-items a {
-    display : block;
-    background-color : #444;
-    color : white;
-    line-height : 2em;
-    text-decoration : none;
-    padding : 10px 30px;
-    width : 100px;
 
+#sidebar.visible {
+    left: 0px;
+    transition: left 0.3s linear;
 }
-.navigation-items a:hover {
-    background-color : #222;
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+#links {
+    background: #1C1E1F;
+    color: #ccc;
+    border-bottom: 1px solid #111;
+    display: block;
+    width: 180px;
+    padding: 10px;
+}
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+#sidebar-btn span {
+    height: 1px;
+    background-color: #111;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#sidebar-btn span:nth-child(2) {
+    width: 75%;
+}
+
+#sidebar-btn span:nth-child(3) {
+    width: 50%;
 }
