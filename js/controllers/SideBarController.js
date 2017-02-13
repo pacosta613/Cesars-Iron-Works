@@ -7,14 +7,13 @@
     .controller('SideBarController', SideBarController)
 
 
-  function SideBarController(){
+  function SideBarController($scope){
 
-    var vm = this;
-    vm.clickFlag = false;
-    vm.toggleState = toggleState;
-
-    function toggleState(){
-      vm.clickFlag = true;
+    $scope.state = false;
+    $scope.toggleState = toggleState;
+    
+    function toggleState() {
+      $scope.state = true;
     };
 
   };
