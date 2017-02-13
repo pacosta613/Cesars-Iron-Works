@@ -30,8 +30,12 @@
 
   <script>
     $(document).ready(function(){
-      $("#sidebar-btn").click(function(){
+      $("#sidebar-btn").click(function(e){
+        e.stopPropagation();
         $("#sidebar").toggleClass("visible");
+      });
+      $("body").click(function(){
+        $("#sidebar").removeClass("visible");
       });
     });
   </script>
