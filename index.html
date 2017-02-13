@@ -13,15 +13,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/app/app.js"></script>
   <script src="js/controllers/HomeController.js"></script>
-  <script src="js/controllers/SideBarController.js"></script>
-  <!-- <script src="js/directives/sideBarDirective.js"></script> -->
+  <!-- <script src="js/controllers/SideBarController.js"></script> -->
+    <div ng-include="'js/views/navbar/navbar.html'"></div>
+
 </head>
 <body ng-app="app">
 
-  <div ng-include="'js/views/navbar/navbar.html'"></div>
   <div ng-include="'js/views/sidebar/sidebar.html'"></div>
 
-  <div class="jumbotron text-center" >
+  <div class="center jumbotron" >
     <div ui-view></div>
   </div>
 
