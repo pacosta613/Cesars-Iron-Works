@@ -9,10 +9,8 @@
   <link rel="stylesheet" type="text/css" href="js/css/custom.css">
 
   <script src="npm_modules/angular.js"></script>
-  <script src="npm_modules/angular-material.min.js"></script>
-  <script src="npm_modules/angular-animate.min.js"></script>
-  <script src="npm_modules/angular-aria.min.js"></script>
   <script src="npm_modules/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/app/app.js"></script>
   <script src="js/controllers/HomeController.js"></script>
   <script src="js/controllers/SideBarController.js"></script>
@@ -29,5 +27,13 @@
 
   <div ng-include="'js/views/footer.html'"></div>
   </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#sidebar-btn").click(function(){
+        $("#sidebar").toggleClass("visible");
+      });
+    });
+  </script>
 </body>
 </html>
