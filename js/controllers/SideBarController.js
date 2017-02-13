@@ -7,15 +7,13 @@
     .controller('SideBarController', SideBarController)
 
 
-  function SideBarController($scope){
+  function SideBarController($scope, $mdSidenav){
 
-    $scope.state = false;
+    // $scope.state = false;
     $scope.toggleState = toggleState;
     
-    function toggleState() {
-      $scope.state = true;
+    function toggleState(navId) {
+      $mdSidenav(navId).toggle();
     };
-
   };
-
 }());
