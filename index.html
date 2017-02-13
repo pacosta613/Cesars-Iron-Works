@@ -34,6 +34,9 @@
         e.stopPropagation();
         $("#sidebar").toggleClass("visible");
       });
+      $('#sidebar').click(function(e){
+          e.stopPropagation();
+      });
       $("body").click(function(){
         $("#sidebar").removeClass("visible");
       });
