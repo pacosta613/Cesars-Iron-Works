@@ -11,63 +11,63 @@
     $stateProvider
       .state("home", {
         url: "/home",
-        templateUrl: "js/views/navbar/home.html",
+        templateUrl: "angular/views/navbar/home.html",
         controller: "HomeController"
       })
   
       .state("about", {
         url: "/about",
-        templateUrl: "js/views/navbar/about.html"
+        templateUrl: "angular/views/navbar/about.html"
       })
   
       .state("product", {
         url: "/product",
-        templateUrl: "js/views/navbar/product.html"
+        templateUrl: "angular/views/navbar/product.html"
       })
 
       .state("contact", {
         url: "/contact",
-        templateUrl: "js/views/navbar/contact.html"
+        templateUrl: "angular/views/navbar/contact.html"
       })
 
       .state("railing", {
         url: "/railing",
-        templateUrl: "js/views/sidebar/railing.html"
+        templateUrl: "angular/views/sidebar/railing.html"
       })
 
       .state("window", {
         url: "/window",
-        templateUrl: "js/views/sidebar/window.html"
+        templateUrl: "angular/views/sidebar/window.html"
       })
 
       .state("stair", {
         url: "/stair",
-        templateUrl: "js/views/sidebar/stair.html"
+        templateUrl: "angular/views/sidebar/stair.html"
       })
 
       .state("fence", {
         url: "/fence",
-        templateUrl: "js/views/sidebar/fence.html"
+        templateUrl: "angular/views/sidebar/fence.html"
       })
 
       .state("cellar", {
         url: "/cellar",
-        templateUrl: "js/views/sidebar/cellar.html"
+        templateUrl: "angular/views/sidebar/cellar.html"
       })
 
       .state("balconies", {
         url: "/balconies",
-        templateUrl: "js/views/sidebar/balconies.html"
+        templateUrl: "angular/views/sidebar/balconies.html"
       })
 
       .state("fire", {
         url: "/fire",
-        templateUrl: "js/views/sidebar/fire.html"
+        templateUrl: "angular/views/sidebar/fire.html"
       })
 
       .state("porch", {
         url: "/porch",
-        templateUrl: "js/views/sidebar/porch.html"
+        templateUrl: "angular/views/sidebar/porch.html"
       });
   });
 
