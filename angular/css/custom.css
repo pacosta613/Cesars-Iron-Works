@@ -54,7 +54,6 @@ nav {
     top: 55px;
     left: -200px;
     transition: left 0.3s linear;
-
 }
 
 #sidebar.visible {

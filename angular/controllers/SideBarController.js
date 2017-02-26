@@ -1,19 +1,21 @@
-$(document).ready(function(){
-  $("#sidebar-btn").click(function(e){
-    e.stopPropagation();
-    $("#sidebar").toggleClass("visible");
-    $("#container").toggleClass("body-container");
-  });
-  $("body").click(function(){
-    $("#sidebar").removeClass("visible");
-    $("#container").removeClass("body-container");
-  });
+$(function(){
 
+'use strict';
 
-  // if ($("#sidebar") === $("#sidebar.visible")) {
-  //   $(".container").toggleClass("body-container");
-  // } else {
-  //   $(".container").removeClass("body-container");
-  // }
+angular
+  .module("app")
+  .controller("SideBarController", SideBarController);
 
-});
+  function SideBarController(){
+    $("#sidebar-btn").click(function(e){
+      e.stopPropagation();
+      $("#sidebar").toggleClass("visible");
+      $("#container").toggleClass("body-container");
+    });
+    $("body").click(function(){
+      $("#sidebar").removeClass("visible");
+      $("#container").removeClass("body-container");
+    });
+  }
+
+}());
