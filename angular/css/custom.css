@@ -1,7 +1,6 @@
 body {
     font-family : monospace;
     height: 100%;
-    padding-top: 70px;
 }
 
 #footer {
@@ -12,14 +11,27 @@ body {
     text-align: center;
 }
 
-#navbar {
-    position: fixed;
+nav {   
     width: 100%;
+    position: fixed;
     top: 0;
 }
 
+.navbar-default {
+    background-color: #004C00;
+    border-color: #151515;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default #list {
+    color: white;
+}
+
 #sidebar {
-    background: #151718;
+    background-color: #004C00 ;
     width: 200px;
     height: 100%;
     display: block;
@@ -44,9 +56,9 @@ ul li {
 }
 
 #links {
-    background: #1C1E1F;
-    color: #ccc;
-    border-bottom: 1px solid #111;
+    background: #003300;
+    color: #fff;
+    border-bottom: 1px solid #151515;
     display: block;
     width: 180px;
     padding: 10px;
