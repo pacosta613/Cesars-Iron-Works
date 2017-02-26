@@ -3,8 +3,13 @@ body {
     height: 100%;
 }
 
+.body-container {
+    margin-left: 250px;
+    transition: left 0.3s linear;
+}
+
 #footer {
-    position:fixed;
+    position: fixed;
     bottom:0;
     width:100%;
     height:100px;   
@@ -26,7 +31,17 @@ nav {
     color: white;
 }
 
+.navbar-default .navbar-brand:hover {
+    background-color: #003300;
+    color: white;
+}
+
 .navbar-default #list {
+    color: white;
+}
+
+.navbar-default #list:hover {
+    background-color: #003300;
     color: white;
 }
 
@@ -39,6 +54,7 @@ nav {
     top: 55px;
     left: -200px;
     transition: left 0.3s linear;
+
 }
 
 #sidebar.visible {
@@ -56,6 +72,8 @@ ul li {
 }
 
 #links {
+    margin-left: 2px;
+    margin-top: 2px;
     background: #003300;
     color: #fff;
     border-bottom: 1px solid #151515;
@@ -72,7 +90,7 @@ ul li {
     cursor: pointer;
     position: absolute;
     top: 0px;
-    right: -60px;
+    right: -30px;
 }
 
 #sidebar-btn span {

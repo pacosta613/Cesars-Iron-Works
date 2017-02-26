@@ -13,30 +13,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="angular/app/app.js"></script>
   <script src="angular/controllers/HomeController.js"></script>
-  <!-- <script src="js/controllers/SideBarController.js"></script> -->
+  <script src="angular/controllers/SideBarController.js"></script>
   <div ng-include="'angular/views/navbar/navbar.html'"></div>
 </head>
 <body ng-app="app">
 
   <div ng-include="'angular/views/sidebar/sidebar.html'"></div>
 
-  <div class="center jumbotron" >
+  <div class="center jumbotron container" id="container">
     <div ui-view></div>
   </div>
 
   <div ng-include="'angular/views/footer.html'"></div>
   </div>
 
-    <script>
-    $(document).ready(function(){
-      $("#sidebar-btn").click(function(e){
-        e.stopPropagation();
-        $("#sidebar").toggleClass("visible");
-      });
-      $("body").click(function(){
-        $("#sidebar").removeClass("visible");
-      });
-    });
-  </script>
 </body>
 </html>
